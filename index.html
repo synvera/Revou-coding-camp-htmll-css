@@ -1,31 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan 1 Revou Coding Camp HTML CSS</title>
+    <title>Belajar HTML — Revou Coding Camp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Judul Bab, Heading 1</h1>
-    <p>Mau tulis paragraf, ini contoh paragraf</p>
-    <p>Ini paragraf 1</p>
-    <hr>
-    <p>ini paragraf 2</p>
-
-    mau dienter <br>
-    <!-- ga jadi deh -->
-
-    <h1>Judul bab 1</h1>
-    <h2>Bab 1.1</h2>
-    <h3>Bab 1.1.1</h3>
-    <h4>Bab 1.1.1.1</h4>
-    <h5>Bab 1.1.1.1.1</h5>
-    <h6>Bab 1.1.1.1.1.1</h6>
-
-    <hr/>
-
-    <p>paragraf, aku mau paragrafnya di <b>bold</b></p>
-    <p>paragraf, aku mau paragrafnya di <i>italic</i></p>
-    <p>paragraf, aku mau paragrafnya di <sub>miring kebawah</sub>2<sup>2</sup></p>
+<body class="min-h-screen bg-zinc-50 text-zinc-900 antialiased">
+    <header class="border-b border-zinc-200 bg-white">
+        <div class="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-5 sm:flex-row sm:items-center sm:justify-between">
+            <a href="index.html" class="text-sm font-semibold tracking-tight">HTML / CSS <span class="font-normal text-zinc-500">— Catatan belajar</span></a>
+            <nav aria-label="Navigasi utama" class="flex flex-wrap gap-x-5 gap-y-2 text-sm text-zinc-600">
+                <a href="index.html" aria-current="page" class="font-medium text-zinc-950 underline underline-offset-4">Beranda</a>
+                <a href="list.html" class="transition hover:text-black">List</a>
+                <a href="form.html" class="transition hover:text-black">Form</a>
+                <a href="tabel.html" class="transition hover:text-black">Tabel</a>
+                <a href="image.html" class="transition hover:text-black">Gambar</a>
+            </nav>
+        </div>
+    </header>
+    <main class="mx-auto max-w-5xl px-6 py-12 sm:py-16">
+        <section class="rounded-2xl bg-zinc-950 px-7 py-10 text-white sm:px-12 sm:py-14">
+            <p class="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-400">Revou Coding Camp · HTML dasar</p>
+            <h1 class="max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl">Belajar menyusun halaman, satu elemen demi satu.</h1>
+            <p class="mt-5 max-w-xl text-base leading-7 text-zinc-300">Catatan ringkas untuk mengenal heading, paragraf, format teks, list, form, tabel, dan gambar.</p>
+        </section>
+        <section class="mt-10 grid gap-5 md:grid-cols-2">
+            <article class="rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">01 · Struktur</p>
+                <h2 class="mt-3 text-2xl font-semibold tracking-tight">Heading & paragraf</h2>
+                <p class="mt-3 leading-7 text-zinc-600">Heading membantu menyusun hierarki konten, sementara paragraf digunakan untuk teks yang mengalir.</p>
+                <div class="mt-6 space-y-3 border-t border-zinc-100 pt-5">
+                    <h3 class="text-xl font-semibold">Judul bab</h3>
+                    <h4 class="text-lg font-medium">Bab 1.1</h4>
+                    <h5 class="text-base font-medium">Bab 1.1.1</h5>
+                    <p class="text-sm leading-6 text-zinc-600">Contoh paragraf dengan <strong class="font-semibold text-zinc-950">teks tebal</strong> dan <em class="italic">teks miring</em>.</p>
+                    <p class="text-sm text-zinc-600">Contoh subskrip H<sub>2</sub>O dan superskrip 2<sup>2</sup>.</p>
+                </div>
+            </article>
+            <article class="rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">Jelajahi materi</p>
+                <h2 class="mt-3 text-2xl font-semibold tracking-tight">Contoh elemen HTML</h2>
+                <ul class="mt-5 divide-y divide-zinc-100">
+                    <li><a href="list.html" class="flex items-center justify-between py-4 text-sm font-medium hover:text-zinc-500"><span>List berurutan & tidak berurutan</span><span aria-hidden="true">↗</span></a></li>
+                    <li><a href="form.html" class="flex items-center justify-between py-4 text-sm font-medium hover:text-zinc-500"><span>Input dan pilihan form</span><span aria-hidden="true">↗</span></a></li>
+                    <li><a href="tabel.html" class="flex items-center justify-between py-4 text-sm font-medium hover:text-zinc-500"><span>Tabel data sederhana</span><span aria-hidden="true">↗</span></a></li>
+                    <li><a href="image.html" class="flex items-center justify-between py-4 text-sm font-medium hover:text-zinc-500"><span>Gambar dan tautan</span><span aria-hidden="true">↗</span></a></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="mx-auto max-w-5xl px-6 pb-8 text-xs text-zinc-500">Latihan HTML & CSS · Revou Coding Camp</footer>
 </body>
 </html>
